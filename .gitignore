@@ -1,0 +1,15 @@
+*.log
+
+.*-tmp
+.*-cache
+.DS_Store
+.git
+.idea
+.jekyll-metadata
+.tmp
+package-lock.json
+
+node_modules
+dist
+
+/backup
