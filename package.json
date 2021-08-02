@@ -8,10 +8,6 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "keywords": [
     "toolbox",
     "toolkit",
@@ -21,6 +17,11 @@
   ],
   "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anti-chaos/toolbox.git"
+  },
+  "homepage": "https://github.com/anti-chaos/toolbox#readme",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc && rollup -c rollup.config.ts",

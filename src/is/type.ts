@@ -30,12 +30,21 @@ export function isString( target: any ): boolean {
 }
 
 /**
+ * 判断是否为异步函数类型
+ *
+ * @param {*} target 目标
+ */
+export function isAsyncFunction( target: any ): boolean {
+  return toString(target) === '[object AsyncFunction]';
+}
+
+/**
  * 判断是否为函数类型
  *
  * @param {*} target 目标
  */
 export function isFunction( target: any ): boolean {
-  return toString(target) === '[object Function]';
+  return toString(target) === '[object Function]' || isAsyncFunction(target);
 }
 
 /**
